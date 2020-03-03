@@ -1,0 +1,2804 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.1110.1721                               -->
+<workbook original-version='18.1' source-build='2019.2.6 (20192.19.1110.1721)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='previous_application' inline='true' name='federated.08gtw9i1hyw9ei19gu42j0m7yq00' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='previous_application' name='textscan.0sbl1e918e0dd61g7ns0s17cjnm2'>
+            <connection class='textscan' directory='C:/Users/SANTHOSH VENUGOPAL/Desktop/CASE STUDY/DATASETS' filename='previous_application.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0sbl1e918e0dd61g7ns0s17cjnm2' name='previous_application.csv' table='[previous_application#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='SK_ID_PREV' ordinal='0' />
+            <column datatype='integer' name='SK_ID_CURR' ordinal='1' />
+            <column datatype='string' name='NAME_CONTRACT_TYPE' ordinal='2' />
+            <column datatype='real' name='AMT_ANNUITY' ordinal='3' />
+            <column datatype='real' name='AMT_APPLICATION' ordinal='4' />
+            <column datatype='real' name='AMT_CREDIT' ordinal='5' />
+            <column datatype='real' name='AMT_DOWN_PAYMENT' ordinal='6' />
+            <column datatype='real' name='AMT_GOODS_PRICE' ordinal='7' />
+            <column datatype='string' name='WEEKDAY_APPR_PROCESS_START' ordinal='8' />
+            <column datatype='integer' name='HOUR_APPR_PROCESS_START' ordinal='9' />
+            <column datatype='string' name='FLAG_LAST_APPL_PER_CONTRACT' ordinal='10' />
+            <column datatype='integer' name='NFLAG_LAST_APPL_IN_DAY' ordinal='11' />
+            <column datatype='real' name='RATE_DOWN_PAYMENT' ordinal='12' />
+            <column datatype='real' name='RATE_INTEREST_PRIMARY' ordinal='13' />
+            <column datatype='real' name='RATE_INTEREST_PRIVILEGED' ordinal='14' />
+            <column datatype='string' name='NAME_CASH_LOAN_PURPOSE' ordinal='15' />
+            <column datatype='string' name='NAME_CONTRACT_STATUS' ordinal='16' />
+            <column datatype='integer' name='DAYS_DECISION' ordinal='17' />
+            <column datatype='string' name='NAME_PAYMENT_TYPE' ordinal='18' />
+            <column datatype='string' name='CODE_REJECT_REASON' ordinal='19' />
+            <column datatype='string' name='NAME_TYPE_SUITE' ordinal='20' />
+            <column datatype='string' name='NAME_CLIENT_TYPE' ordinal='21' />
+            <column datatype='string' name='NAME_GOODS_CATEGORY' ordinal='22' />
+            <column datatype='string' name='NAME_PORTFOLIO' ordinal='23' />
+            <column datatype='string' name='NAME_PRODUCT_TYPE' ordinal='24' />
+            <column datatype='string' name='CHANNEL_TYPE' ordinal='25' />
+            <column datatype='integer' name='SELLERPLACE_AREA' ordinal='26' />
+            <column datatype='string' name='NAME_SELLER_INDUSTRY' ordinal='27' />
+            <column datatype='real' name='CNT_PAYMENT' ordinal='28' />
+            <column datatype='string' name='NAME_YIELD_GROUP' ordinal='29' />
+            <column datatype='string' name='PRODUCT_COMBINATION' ordinal='30' />
+            <column datatype='real' name='DAYS_FIRST_DRAWING' ordinal='31' />
+            <column datatype='real' name='DAYS_FIRST_DUE' ordinal='32' />
+            <column datatype='real' name='DAYS_LAST_DUE_1ST_VERSION' ordinal='33' />
+            <column datatype='real' name='DAYS_LAST_DUE' ordinal='34' />
+            <column datatype='real' name='DAYS_TERMINATION' ordinal='35' />
+            <column datatype='real' name='NFLAG_INSURED_ON_APPROVAL' ordinal='36' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SK_ID_PREV</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SK_ID_PREV]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>SK_ID_PREV</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SK_ID_CURR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SK_ID_CURR]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>SK_ID_CURR</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_CONTRACT_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_CONTRACT_TYPE]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_CONTRACT_TYPE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_ANNUITY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_ANNUITY]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>AMT_ANNUITY</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_APPLICATION</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_APPLICATION]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>AMT_APPLICATION</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_CREDIT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_CREDIT]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>AMT_CREDIT</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_DOWN_PAYMENT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_DOWN_PAYMENT]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>AMT_DOWN_PAYMENT</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_GOODS_PRICE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_GOODS_PRICE]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>AMT_GOODS_PRICE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WEEKDAY_APPR_PROCESS_START</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WEEKDAY_APPR_PROCESS_START]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>WEEKDAY_APPR_PROCESS_START</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOUR_APPR_PROCESS_START</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HOUR_APPR_PROCESS_START]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>HOUR_APPR_PROCESS_START</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_LAST_APPL_PER_CONTRACT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FLAG_LAST_APPL_PER_CONTRACT]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>FLAG_LAST_APPL_PER_CONTRACT</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NFLAG_LAST_APPL_IN_DAY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NFLAG_LAST_APPL_IN_DAY]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NFLAG_LAST_APPL_IN_DAY</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RATE_DOWN_PAYMENT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RATE_DOWN_PAYMENT]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>RATE_DOWN_PAYMENT</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RATE_INTEREST_PRIMARY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RATE_INTEREST_PRIMARY]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>RATE_INTEREST_PRIMARY</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RATE_INTEREST_PRIVILEGED</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RATE_INTEREST_PRIVILEGED]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>RATE_INTEREST_PRIVILEGED</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_CASH_LOAN_PURPOSE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_CASH_LOAN_PURPOSE]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_CASH_LOAN_PURPOSE</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_CONTRACT_STATUS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_CONTRACT_STATUS]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_CONTRACT_STATUS</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_DECISION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAYS_DECISION]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>DAYS_DECISION</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_PAYMENT_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_PAYMENT_TYPE]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_PAYMENT_TYPE</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODE_REJECT_REASON</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CODE_REJECT_REASON]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>CODE_REJECT_REASON</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_TYPE_SUITE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_TYPE_SUITE]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_TYPE_SUITE</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_CLIENT_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_CLIENT_TYPE]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_CLIENT_TYPE</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_GOODS_CATEGORY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_GOODS_CATEGORY]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_GOODS_CATEGORY</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_PORTFOLIO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_PORTFOLIO]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_PORTFOLIO</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_PRODUCT_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_PRODUCT_TYPE]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_PRODUCT_TYPE</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHANNEL_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHANNEL_TYPE]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>CHANNEL_TYPE</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SELLERPLACE_AREA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SELLERPLACE_AREA]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>SELLERPLACE_AREA</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_SELLER_INDUSTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_SELLER_INDUSTRY]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_SELLER_INDUSTRY</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNT_PAYMENT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CNT_PAYMENT]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>CNT_PAYMENT</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_YIELD_GROUP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_YIELD_GROUP]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NAME_YIELD_GROUP</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRODUCT_COMBINATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRODUCT_COMBINATION]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>PRODUCT_COMBINATION</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_FIRST_DRAWING</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DAYS_FIRST_DRAWING]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>DAYS_FIRST_DRAWING</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_FIRST_DUE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DAYS_FIRST_DUE]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>DAYS_FIRST_DUE</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_LAST_DUE_1ST_VERSION</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DAYS_LAST_DUE_1ST_VERSION]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>DAYS_LAST_DUE_1ST_VERSION</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_LAST_DUE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DAYS_LAST_DUE]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>DAYS_LAST_DUE</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_TERMINATION</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DAYS_TERMINATION]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>DAYS_TERMINATION</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NFLAG_INSURED_ON_APPROVAL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NFLAG_INSURED_ON_APPROVAL]</local-name>
+            <parent-name>[previous_application.csv]</parent-name>
+            <remote-alias>NFLAG_INSURED_ON_APPROVAL</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Amt Annuity' datatype='real' name='[AMT_ANNUITY]' role='measure' type='quantitative' />
+      <column caption='Amt Application' datatype='real' name='[AMT_APPLICATION]' role='measure' type='quantitative' />
+      <column caption='Amt Credit' datatype='real' name='[AMT_CREDIT]' role='measure' type='quantitative' />
+      <column caption='Amt Down Payment' datatype='real' name='[AMT_DOWN_PAYMENT]' role='measure' type='quantitative' />
+      <column caption='Amt Goods Price' datatype='real' name='[AMT_GOODS_PRICE]' role='measure' type='quantitative' />
+      <column caption='Channel Type' datatype='string' name='[CHANNEL_TYPE]' role='dimension' type='nominal' />
+      <column caption='Cnt Payment' datatype='real' name='[CNT_PAYMENT]' role='measure' type='quantitative' />
+      <column caption='Code Reject Reason' datatype='string' name='[CODE_REJECT_REASON]' role='dimension' type='nominal' />
+      <column caption='Days Decision' datatype='integer' name='[DAYS_DECISION]' role='measure' type='quantitative' />
+      <column caption='Days First Drawing' datatype='real' name='[DAYS_FIRST_DRAWING]' role='measure' type='quantitative' />
+      <column caption='Days First Due' datatype='real' name='[DAYS_FIRST_DUE]' role='measure' type='quantitative' />
+      <column caption='Days Last Due' datatype='real' name='[DAYS_LAST_DUE]' role='measure' type='quantitative' />
+      <column caption='Days Last Due 1St Version' datatype='real' name='[DAYS_LAST_DUE_1ST_VERSION]' role='measure' type='quantitative' />
+      <column caption='Days Termination' datatype='real' name='[DAYS_TERMINATION]' role='measure' type='quantitative' />
+      <column caption='Flag Last Appl Per Contract' datatype='string' name='[FLAG_LAST_APPL_PER_CONTRACT]' role='dimension' type='nominal' />
+      <column caption='Hour Appr Process Start' datatype='integer' name='[HOUR_APPR_PROCESS_START]' role='measure' type='quantitative' />
+      <column caption='Name Cash Loan Purpose' datatype='string' name='[NAME_CASH_LOAN_PURPOSE]' role='dimension' type='nominal' />
+      <column caption='Name Client Type' datatype='string' name='[NAME_CLIENT_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Contract Status' datatype='string' name='[NAME_CONTRACT_STATUS]' role='dimension' type='nominal' />
+      <column caption='Name Contract Type' datatype='string' name='[NAME_CONTRACT_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Goods Category' datatype='string' name='[NAME_GOODS_CATEGORY]' role='dimension' type='nominal' />
+      <column caption='Name Payment Type' datatype='string' name='[NAME_PAYMENT_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Portfolio' datatype='string' name='[NAME_PORTFOLIO]' role='dimension' type='nominal' />
+      <column caption='Name Product Type' datatype='string' name='[NAME_PRODUCT_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Seller Industry' datatype='string' name='[NAME_SELLER_INDUSTRY]' role='dimension' type='nominal' />
+      <column caption='Name Type Suite' datatype='string' name='[NAME_TYPE_SUITE]' role='dimension' type='nominal' />
+      <column caption='Name Yield Group' datatype='string' name='[NAME_YIELD_GROUP]' role='dimension' type='nominal' />
+      <column caption='Nflag Insured On Approval' datatype='real' name='[NFLAG_INSURED_ON_APPROVAL]' role='measure' type='quantitative' />
+      <column caption='Nflag Last Appl In Day' datatype='integer' name='[NFLAG_LAST_APPL_IN_DAY]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Product Combination' datatype='string' name='[PRODUCT_COMBINATION]' role='dimension' type='nominal' />
+      <column caption='Rate Down Payment' datatype='real' name='[RATE_DOWN_PAYMENT]' role='measure' type='quantitative' />
+      <column caption='Rate Interest Primary' datatype='real' name='[RATE_INTEREST_PRIMARY]' role='measure' type='quantitative' />
+      <column caption='Rate Interest Privileged' datatype='real' name='[RATE_INTEREST_PRIVILEGED]' role='measure' type='quantitative' />
+      <column caption='Sellerplace Area' datatype='integer' name='[SELLERPLACE_AREA]' role='measure' type='quantitative' />
+      <column caption='Sk Id Curr' datatype='integer' name='[SK_ID_CURR]' role='measure' type='quantitative' />
+      <column caption='Sk Id Prev' datatype='integer' name='[SK_ID_PREV]' role='measure' type='quantitative' />
+      <column caption='Weekday Appr Process Start' datatype='string' name='[WEEKDAY_APPR_PROCESS_START]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.55698' measure-ordering='alphabetic' measure-percentage='0.44302' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='application_data' inline='true' name='federated.0m26y6e1o4hbc81f1bi4l031g565' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='application_data' name='textscan.1er7p6l0lwt2me13qnvx30xq5wa4'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/SANTHOSH VENUGOPAL/Desktop/CASE STUDY/DATASETS/application_data.csv' dataRefreshTime='' directory='C:/Users/SANTHOSH VENUGOPAL/Desktop/CASE STUDY/DATASETS' filename='C:/Users/SANTHO~1/AppData/Local/Temp/TableauTemp/0tp084t07wj89g17vbs1p0x80oxf/application_data.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1er7p6l0lwt2me13qnvx30xq5wa4' name='application_data.csv' table='[application_data#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:DR10001:no:A1:DR10001:2' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='SK_ID_CURR SK_ID_CURR' ordinal='0' />
+            <column datatype='integer' name='TARGET TARGET' ordinal='1' />
+            <column datatype='string' name='NAME_CONTRACT_TYPE NAME_CONTRACT_TYPE' ordinal='2' />
+            <column datatype='string' name='CODE_GENDER CODE_GENDER' ordinal='3' />
+            <column datatype='string' name='FLAG_OWN_CAR FLAG_OWN_CAR' ordinal='4' />
+            <column datatype='string' name='FLAG_OWN_REALTY FLAG_OWN_REALTY' ordinal='5' />
+            <column datatype='integer' name='CNT_CHILDREN CNT_CHILDREN' ordinal='6' />
+            <column datatype='real' name='AMT_INCOME_TOTAL AMT_INCOME_TOTAL' ordinal='7' />
+            <column datatype='real' name='AMT_CREDIT AMT_CREDIT' ordinal='8' />
+            <column datatype='real' name='AMT_ANNUITY AMT_ANNUITY' ordinal='9' />
+            <column datatype='real' name='AMT_GOODS_PRICE AMT_GOODS_PRICE' ordinal='10' />
+            <column datatype='string' name='NAME_TYPE_SUITE NAME_TYPE_SUITE' ordinal='11' />
+            <column datatype='string' name='NAME_INCOME_TYPE NAME_INCOME_TYPE' ordinal='12' />
+            <column datatype='string' name='NAME_EDUCATION_TYPE NAME_EDUCATION_TYPE' ordinal='13' />
+            <column datatype='string' name='NAME_FAMILY_STATUS NAME_FAMILY_STATUS' ordinal='14' />
+            <column datatype='string' name='NAME_HOUSING_TYPE NAME_HOUSING_TYPE' ordinal='15' />
+            <column datatype='real' name='REGION_POPULATION_RELATIVE REGION_POPULATION_RELATIVE' ordinal='16' />
+            <column datatype='integer' name='DAYS_BIRTH DAYS_BIRTH' ordinal='17' />
+            <column datatype='integer' name='DAYS_EMPLOYED DAYS_EMPLOYED' ordinal='18' />
+            <column datatype='integer' name='DAYS_REGISTRATION DAYS_REGISTRATION' ordinal='19' />
+            <column datatype='integer' name='DAYS_ID_PUBLISH DAYS_ID_PUBLISH' ordinal='20' />
+            <column datatype='integer' name='OWN_CAR_AGE OWN_CAR_AGE' ordinal='21' />
+            <column datatype='integer' name='FLAG_MOBIL FLAG_MOBIL' ordinal='22' />
+            <column datatype='integer' name='FLAG_EMP_PHONE FLAG_EMP_PHONE' ordinal='23' />
+            <column datatype='integer' name='FLAG_WORK_PHONE FLAG_WORK_PHONE' ordinal='24' />
+            <column datatype='integer' name='FLAG_CONT_MOBILE FLAG_CONT_MOBILE' ordinal='25' />
+            <column datatype='integer' name='FLAG_PHONE FLAG_PHONE' ordinal='26' />
+            <column datatype='integer' name='FLAG_EMAIL FLAG_EMAIL' ordinal='27' />
+            <column datatype='string' name='OCCUPATION_TYPE OCCUPATION_TYPE' ordinal='28' />
+            <column datatype='integer' name='CNT_FAM_MEMBERS CNT_FAM_MEMBERS' ordinal='29' />
+            <column datatype='integer' name='REGION_RATING_CLIENT REGION_RATING_CLIENT' ordinal='30' />
+            <column datatype='integer' name='REGION_RATING_CLIENT_W_CITY REGION_RATING_CLIENT_W_CITY' ordinal='31' />
+            <column datatype='string' name='WEEKDAY_APPR_PROCESS_START WEEKDAY_APPR_PROCESS_START' ordinal='32' />
+            <column datatype='integer' name='HOUR_APPR_PROCESS_START HOUR_APPR_PROCESS_START' ordinal='33' />
+            <column datatype='integer' name='REG_REGION_NOT_LIVE_REGION REG_REGION_NOT_LIVE_REGION' ordinal='34' />
+            <column datatype='integer' name='REG_REGION_NOT_WORK_REGION REG_REGION_NOT_WORK_REGION' ordinal='35' />
+            <column datatype='integer' name='LIVE_REGION_NOT_WORK_REGION LIVE_REGION_NOT_WORK_REGION' ordinal='36' />
+            <column datatype='integer' name='REG_CITY_NOT_LIVE_CITY REG_CITY_NOT_LIVE_CITY' ordinal='37' />
+            <column datatype='integer' name='REG_CITY_NOT_WORK_CITY REG_CITY_NOT_WORK_CITY' ordinal='38' />
+            <column datatype='integer' name='LIVE_CITY_NOT_WORK_CITY LIVE_CITY_NOT_WORK_CITY' ordinal='39' />
+            <column datatype='string' name='ORGANIZATION_TYPE ORGANIZATION_TYPE' ordinal='40' />
+            <column datatype='real' name='EXT_SOURCE_1 EXT_SOURCE_1' ordinal='41' />
+            <column datatype='real' name='EXT_SOURCE_2 EXT_SOURCE_2' ordinal='42' />
+            <column datatype='real' name='EXT_SOURCE_3 EXT_SOURCE_3' ordinal='43' />
+            <column datatype='real' name='APARTMENTS_AVG APARTMENTS_AVG' ordinal='44' />
+            <column datatype='real' name='BASEMENTAREA_AVG BASEMENTAREA_AVG' ordinal='45' />
+            <column datatype='real' name='YEARS_BEGINEXPLUATATION_AVG YEARS_BEGINEXPLUATATION_AVG' ordinal='46' />
+            <column datatype='real' name='YEARS_BUILD_AVG YEARS_BUILD_AVG' ordinal='47' />
+            <column datatype='real' name='COMMONAREA_AVG COMMONAREA_AVG' ordinal='48' />
+            <column datatype='real' name='ELEVATORS_AVG ELEVATORS_AVG' ordinal='49' />
+            <column datatype='real' name='ENTRANCES_AVG ENTRANCES_AVG' ordinal='50' />
+            <column datatype='real' name='FLOORSMAX_AVG FLOORSMAX_AVG' ordinal='51' />
+            <column datatype='real' name='FLOORSMIN_AVG FLOORSMIN_AVG' ordinal='52' />
+            <column datatype='real' name='LANDAREA_AVG LANDAREA_AVG' ordinal='53' />
+            <column datatype='real' name='LIVINGAPARTMENTS_AVG LIVINGAPARTMENTS_AVG' ordinal='54' />
+            <column datatype='real' name='LIVINGAREA_AVG LIVINGAREA_AVG' ordinal='55' />
+            <column datatype='real' name='NONLIVINGAPARTMENTS_AVG NONLIVINGAPARTMENTS_AVG' ordinal='56' />
+            <column datatype='real' name='NONLIVINGAREA_AVG NONLIVINGAREA_AVG' ordinal='57' />
+            <column datatype='real' name='APARTMENTS_MODE APARTMENTS_MODE' ordinal='58' />
+            <column datatype='real' name='BASEMENTAREA_MODE BASEMENTAREA_MODE' ordinal='59' />
+            <column datatype='real' name='YEARS_BEGINEXPLUATATION_MODE YEARS_BEGINEXPLUATATION_MODE' ordinal='60' />
+            <column datatype='real' name='YEARS_BUILD_MODE YEARS_BUILD_MODE' ordinal='61' />
+            <column datatype='real' name='COMMONAREA_MODE COMMONAREA_MODE' ordinal='62' />
+            <column datatype='real' name='ELEVATORS_MODE ELEVATORS_MODE' ordinal='63' />
+            <column datatype='real' name='ENTRANCES_MODE ENTRANCES_MODE' ordinal='64' />
+            <column datatype='real' name='FLOORSMAX_MODE FLOORSMAX_MODE' ordinal='65' />
+            <column datatype='real' name='FLOORSMIN_MODE FLOORSMIN_MODE' ordinal='66' />
+            <column datatype='real' name='LANDAREA_MODE LANDAREA_MODE' ordinal='67' />
+            <column datatype='real' name='LIVINGAPARTMENTS_MODE LIVINGAPARTMENTS_MODE' ordinal='68' />
+            <column datatype='real' name='LIVINGAREA_MODE LIVINGAREA_MODE' ordinal='69' />
+            <column datatype='real' name='NONLIVINGAPARTMENTS_MODE NONLIVINGAPARTMENTS_MODE' ordinal='70' />
+            <column datatype='real' name='NONLIVINGAREA_MODE NONLIVINGAREA_MODE' ordinal='71' />
+            <column datatype='real' name='APARTMENTS_MEDI APARTMENTS_MEDI' ordinal='72' />
+            <column datatype='real' name='BASEMENTAREA_MEDI BASEMENTAREA_MEDI' ordinal='73' />
+            <column datatype='real' name='YEARS_BEGINEXPLUATATION_MEDI YEARS_BEGINEXPLUATATION_MEDI' ordinal='74' />
+            <column datatype='real' name='YEARS_BUILD_MEDI YEARS_BUILD_MEDI' ordinal='75' />
+            <column datatype='real' name='COMMONAREA_MEDI COMMONAREA_MEDI' ordinal='76' />
+            <column datatype='real' name='ELEVATORS_MEDI ELEVATORS_MEDI' ordinal='77' />
+            <column datatype='real' name='ENTRANCES_MEDI ENTRANCES_MEDI' ordinal='78' />
+            <column datatype='real' name='FLOORSMAX_MEDI FLOORSMAX_MEDI' ordinal='79' />
+            <column datatype='real' name='FLOORSMIN_MEDI FLOORSMIN_MEDI' ordinal='80' />
+            <column datatype='real' name='LANDAREA_MEDI LANDAREA_MEDI' ordinal='81' />
+            <column datatype='real' name='LIVINGAPARTMENTS_MEDI LIVINGAPARTMENTS_MEDI' ordinal='82' />
+            <column datatype='real' name='LIVINGAREA_MEDI LIVINGAREA_MEDI' ordinal='83' />
+            <column datatype='real' name='NONLIVINGAPARTMENTS_MEDI NONLIVINGAPARTMENTS_MEDI' ordinal='84' />
+            <column datatype='real' name='NONLIVINGAREA_MEDI NONLIVINGAREA_MEDI' ordinal='85' />
+            <column datatype='string' name='FONDKAPREMONT_MODE FONDKAPREMONT_MODE' ordinal='86' />
+            <column datatype='string' name='HOUSETYPE_MODE HOUSETYPE_MODE' ordinal='87' />
+            <column datatype='real' name='TOTALAREA_MODE TOTALAREA_MODE' ordinal='88' />
+            <column datatype='string' name='WALLSMATERIAL_MODE WALLSMATERIAL_MODE' ordinal='89' />
+            <column datatype='string' name='EMERGENCYSTATE_MODE EMERGENCYSTATE_MODE' ordinal='90' />
+            <column datatype='integer' name='OBS_30_CNT_SOCIAL_CIRCLE OBS_30_CNT_SOCIAL_CIRCLE' ordinal='91' />
+            <column datatype='integer' name='DEF_30_CNT_SOCIAL_CIRCLE DEF_30_CNT_SOCIAL_CIRCLE' ordinal='92' />
+            <column datatype='integer' name='OBS_60_CNT_SOCIAL_CIRCLE OBS_60_CNT_SOCIAL_CIRCLE' ordinal='93' />
+            <column datatype='integer' name='DEF_60_CNT_SOCIAL_CIRCLE DEF_60_CNT_SOCIAL_CIRCLE' ordinal='94' />
+            <column datatype='integer' name='DAYS_LAST_PHONE_CHANGE DAYS_LAST_PHONE_CHANGE' ordinal='95' />
+            <column datatype='integer' name='FLAG_DOCUMENT_2 FLAG_DOCUMENT_2' ordinal='96' />
+            <column datatype='integer' name='FLAG_DOCUMENT_3 FLAG_DOCUMENT_3' ordinal='97' />
+            <column datatype='integer' name='FLAG_DOCUMENT_4 FLAG_DOCUMENT_4' ordinal='98' />
+            <column datatype='integer' name='FLAG_DOCUMENT_5 FLAG_DOCUMENT_5' ordinal='99' />
+            <column datatype='integer' name='FLAG_DOCUMENT_6 FLAG_DOCUMENT_6' ordinal='100' />
+            <column datatype='integer' name='FLAG_DOCUMENT_7 FLAG_DOCUMENT_7' ordinal='101' />
+            <column datatype='integer' name='FLAG_DOCUMENT_8 FLAG_DOCUMENT_8' ordinal='102' />
+            <column datatype='integer' name='FLAG_DOCUMENT_9 FLAG_DOCUMENT_9' ordinal='103' />
+            <column datatype='integer' name='FLAG_DOCUMENT_10 FLAG_DOCUMENT_10' ordinal='104' />
+            <column datatype='integer' name='FLAG_DOCUMENT_11 FLAG_DOCUMENT_11' ordinal='105' />
+            <column datatype='integer' name='FLAG_DOCUMENT_12 FLAG_DOCUMENT_12' ordinal='106' />
+            <column datatype='integer' name='FLAG_DOCUMENT_13 FLAG_DOCUMENT_13' ordinal='107' />
+            <column datatype='integer' name='FLAG_DOCUMENT_14 FLAG_DOCUMENT_14' ordinal='108' />
+            <column datatype='integer' name='FLAG_DOCUMENT_15 FLAG_DOCUMENT_15' ordinal='109' />
+            <column datatype='integer' name='FLAG_DOCUMENT_16 FLAG_DOCUMENT_16' ordinal='110' />
+            <column datatype='integer' name='FLAG_DOCUMENT_17 FLAG_DOCUMENT_17' ordinal='111' />
+            <column datatype='integer' name='FLAG_DOCUMENT_18 FLAG_DOCUMENT_18' ordinal='112' />
+            <column datatype='integer' name='FLAG_DOCUMENT_19 FLAG_DOCUMENT_19' ordinal='113' />
+            <column datatype='integer' name='FLAG_DOCUMENT_20 FLAG_DOCUMENT_20' ordinal='114' />
+            <column datatype='integer' name='FLAG_DOCUMENT_21 FLAG_DOCUMENT_21' ordinal='115' />
+            <column datatype='integer' name='AMT_REQ_CREDIT_BUREAU_HOUR AMT_REQ_CREDIT_BUREAU_HOUR' ordinal='116' />
+            <column datatype='integer' name='AMT_REQ_CREDIT_BUREAU_DAY AMT_REQ_CREDIT_BUREAU_DAY' ordinal='117' />
+            <column datatype='integer' name='AMT_REQ_CREDIT_BUREAU_WEEK AMT_REQ_CREDIT_BUREAU_WEEK' ordinal='118' />
+            <column datatype='integer' name='AMT_REQ_CREDIT_BUREAU_MON AMT_REQ_CREDIT_BUREAU_MON' ordinal='119' />
+            <column datatype='integer' name='AMT_REQ_CREDIT_BUREAU_QRT AMT_REQ_CREDIT_BUREAU_QRT' ordinal='120' />
+            <column datatype='integer' name='AMT_REQ_CREDIT_BUREAU_YEAR AMT_REQ_CREDIT_BUREAU_YEAR' ordinal='121' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>SK_ID_CURR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SK_ID_CURR]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>SK_ID_CURR</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TARGET</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TARGET]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>TARGET</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_CONTRACT_TYPE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NAME_CONTRACT_TYPE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NAME_CONTRACT_TYPE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODE_GENDER</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CODE_GENDER]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>CODE_GENDER</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_OWN_CAR</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FLAG_OWN_CAR]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_OWN_CAR</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_OWN_REALTY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FLAG_OWN_REALTY]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_OWN_REALTY</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNT_CHILDREN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CNT_CHILDREN]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>CNT_CHILDREN</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_INCOME_TOTAL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_INCOME_TOTAL]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>AMT_INCOME_TOTAL</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_CREDIT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_CREDIT]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>AMT_CREDIT</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_ANNUITY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_ANNUITY]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>AMT_ANNUITY</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_GOODS_PRICE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_GOODS_PRICE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>AMT_GOODS_PRICE</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_TYPE_SUITE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NAME_TYPE_SUITE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NAME_TYPE_SUITE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_INCOME_TYPE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NAME_INCOME_TYPE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NAME_INCOME_TYPE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_EDUCATION_TYPE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NAME_EDUCATION_TYPE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NAME_EDUCATION_TYPE</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_FAMILY_STATUS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NAME_FAMILY_STATUS]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NAME_FAMILY_STATUS</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_HOUSING_TYPE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NAME_HOUSING_TYPE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NAME_HOUSING_TYPE</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGION_POPULATION_RELATIVE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[REGION_POPULATION_RELATIVE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>REGION_POPULATION_RELATIVE</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_BIRTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAYS_BIRTH]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>DAYS_BIRTH</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_EMPLOYED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAYS_EMPLOYED]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>DAYS_EMPLOYED</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_REGISTRATION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAYS_REGISTRATION]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>DAYS_REGISTRATION</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_ID_PUBLISH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAYS_ID_PUBLISH]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>DAYS_ID_PUBLISH</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OWN_CAR_AGE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OWN_CAR_AGE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>OWN_CAR_AGE</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_MOBIL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_MOBIL]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_MOBIL</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_EMP_PHONE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_EMP_PHONE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_EMP_PHONE</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_WORK_PHONE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_WORK_PHONE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_WORK_PHONE</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_CONT_MOBILE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_CONT_MOBILE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_CONT_MOBILE</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_PHONE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_PHONE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_PHONE</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_EMAIL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_EMAIL]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_EMAIL</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OCCUPATION_TYPE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OCCUPATION_TYPE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>OCCUPATION_TYPE</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNT_FAM_MEMBERS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CNT_FAM_MEMBERS]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>CNT_FAM_MEMBERS</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGION_RATING_CLIENT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REGION_RATING_CLIENT]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>REGION_RATING_CLIENT</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGION_RATING_CLIENT_W_CITY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REGION_RATING_CLIENT_W_CITY]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>REGION_RATING_CLIENT_W_CITY</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WEEKDAY_APPR_PROCESS_START</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[WEEKDAY_APPR_PROCESS_START]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>WEEKDAY_APPR_PROCESS_START</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOUR_APPR_PROCESS_START</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HOUR_APPR_PROCESS_START]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>HOUR_APPR_PROCESS_START</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REG_REGION_NOT_LIVE_REGION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REG_REGION_NOT_LIVE_REGION]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>REG_REGION_NOT_LIVE_REGION</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REG_REGION_NOT_WORK_REGION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REG_REGION_NOT_WORK_REGION]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>REG_REGION_NOT_WORK_REGION</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVE_REGION_NOT_WORK_REGION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LIVE_REGION_NOT_WORK_REGION]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LIVE_REGION_NOT_WORK_REGION</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REG_CITY_NOT_LIVE_CITY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REG_CITY_NOT_LIVE_CITY]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>REG_CITY_NOT_LIVE_CITY</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REG_CITY_NOT_WORK_CITY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REG_CITY_NOT_WORK_CITY]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>REG_CITY_NOT_WORK_CITY</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVE_CITY_NOT_WORK_CITY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LIVE_CITY_NOT_WORK_CITY]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LIVE_CITY_NOT_WORK_CITY</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORGANIZATION_TYPE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ORGANIZATION_TYPE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>ORGANIZATION_TYPE</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXT_SOURCE_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXT_SOURCE_1]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>EXT_SOURCE_1</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXT_SOURCE_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXT_SOURCE_2]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>EXT_SOURCE_2</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXT_SOURCE_3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXT_SOURCE_3]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>EXT_SOURCE_3</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>APARTMENTS_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[APARTMENTS_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>APARTMENTS_AVG</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASEMENTAREA_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BASEMENTAREA_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>BASEMENTAREA_AVG</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BEGINEXPLUATATION_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BEGINEXPLUATATION_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>YEARS_BEGINEXPLUATATION_AVG</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BUILD_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BUILD_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>YEARS_BUILD_AVG</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMONAREA_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[COMMONAREA_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>COMMONAREA_AVG</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELEVATORS_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ELEVATORS_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>ELEVATORS_AVG</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENTRANCES_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ENTRANCES_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>ENTRANCES_AVG</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMAX_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMAX_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLOORSMAX_AVG</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMIN_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMIN_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLOORSMIN_AVG</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LANDAREA_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LANDAREA_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LANDAREA_AVG</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAPARTMENTS_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAPARTMENTS_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LIVINGAPARTMENTS_AVG</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAREA_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAREA_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LIVINGAREA_AVG</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAPARTMENTS_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAPARTMENTS_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NONLIVINGAPARTMENTS_AVG</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAREA_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAREA_AVG]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NONLIVINGAREA_AVG</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>APARTMENTS_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[APARTMENTS_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>APARTMENTS_MODE</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASEMENTAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BASEMENTAREA_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>BASEMENTAREA_MODE</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BEGINEXPLUATATION_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BEGINEXPLUATATION_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>YEARS_BEGINEXPLUATATION_MODE</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BUILD_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BUILD_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>YEARS_BUILD_MODE</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMONAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[COMMONAREA_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>COMMONAREA_MODE</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELEVATORS_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ELEVATORS_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>ELEVATORS_MODE</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENTRANCES_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ENTRANCES_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>ENTRANCES_MODE</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMAX_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMAX_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLOORSMAX_MODE</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMIN_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMIN_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLOORSMIN_MODE</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LANDAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LANDAREA_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LANDAREA_MODE</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAPARTMENTS_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAPARTMENTS_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LIVINGAPARTMENTS_MODE</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAREA_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LIVINGAREA_MODE</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAPARTMENTS_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAPARTMENTS_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NONLIVINGAPARTMENTS_MODE</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAREA_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NONLIVINGAREA_MODE</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>APARTMENTS_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[APARTMENTS_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>APARTMENTS_MEDI</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASEMENTAREA_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BASEMENTAREA_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>BASEMENTAREA_MEDI</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BEGINEXPLUATATION_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BEGINEXPLUATATION_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>YEARS_BEGINEXPLUATATION_MEDI</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BUILD_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BUILD_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>YEARS_BUILD_MEDI</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMONAREA_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[COMMONAREA_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>COMMONAREA_MEDI</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELEVATORS_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ELEVATORS_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>ELEVATORS_MEDI</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENTRANCES_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ENTRANCES_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>ENTRANCES_MEDI</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMAX_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMAX_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLOORSMAX_MEDI</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMIN_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMIN_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLOORSMIN_MEDI</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LANDAREA_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LANDAREA_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LANDAREA_MEDI</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAPARTMENTS_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAPARTMENTS_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LIVINGAPARTMENTS_MEDI</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAREA_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAREA_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>LIVINGAREA_MEDI</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAPARTMENTS_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAPARTMENTS_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NONLIVINGAPARTMENTS_MEDI</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAREA_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAREA_MEDI]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>NONLIVINGAREA_MEDI</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FONDKAPREMONT_MODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FONDKAPREMONT_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FONDKAPREMONT_MODE</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOUSETYPE_MODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[HOUSETYPE_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>HOUSETYPE_MODE</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTALAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOTALAREA_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>TOTALAREA_MODE</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WALLSMATERIAL_MODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[WALLSMATERIAL_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>WALLSMATERIAL_MODE</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMERGENCYSTATE_MODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EMERGENCYSTATE_MODE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>EMERGENCYSTATE_MODE</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBS_30_CNT_SOCIAL_CIRCLE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OBS_30_CNT_SOCIAL_CIRCLE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>OBS_30_CNT_SOCIAL_CIRCLE</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEF_30_CNT_SOCIAL_CIRCLE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DEF_30_CNT_SOCIAL_CIRCLE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>DEF_30_CNT_SOCIAL_CIRCLE</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBS_60_CNT_SOCIAL_CIRCLE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OBS_60_CNT_SOCIAL_CIRCLE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>OBS_60_CNT_SOCIAL_CIRCLE</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEF_60_CNT_SOCIAL_CIRCLE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DEF_60_CNT_SOCIAL_CIRCLE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>DEF_60_CNT_SOCIAL_CIRCLE</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_LAST_PHONE_CHANGE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAYS_LAST_PHONE_CHANGE]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>DAYS_LAST_PHONE_CHANGE</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_2]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_2</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_3]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_3</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_4]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_4</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_5]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_5</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_6]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_6</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_7]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_7</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_8]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_8</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_9]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_9</remote-alias>
+            <ordinal>103</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_10]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_10</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_11</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_11]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_11</remote-alias>
+            <ordinal>105</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_12</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_12]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_12</remote-alias>
+            <ordinal>106</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_13]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_13</remote-alias>
+            <ordinal>107</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_14</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_14]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_14</remote-alias>
+            <ordinal>108</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_15]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_15</remote-alias>
+            <ordinal>109</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_16</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_16]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_16</remote-alias>
+            <ordinal>110</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_17</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_17]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_17</remote-alias>
+            <ordinal>111</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_18</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_18]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_18</remote-alias>
+            <ordinal>112</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_19</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_19]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_19</remote-alias>
+            <ordinal>113</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_20</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_20]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_20</remote-alias>
+            <ordinal>114</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_21</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_21]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_21</remote-alias>
+            <ordinal>115</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_HOUR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_HOUR]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_HOUR</remote-alias>
+            <ordinal>116</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_DAY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_DAY]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_DAY</remote-alias>
+            <ordinal>117</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_WEEK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_WEEK]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_WEEK</remote-alias>
+            <ordinal>118</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_MON</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_MON]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_MON</remote-alias>
+            <ordinal>119</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_QRT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_QRT]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_QRT</remote-alias>
+            <ordinal>120</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_YEAR]</local-name>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_YEAR</remote-alias>
+            <ordinal>121</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[application_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:DR10001:no:A1:DR10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>787609</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Amt Annuity' datatype='real' name='[AMT_ANNUITY]' role='measure' type='quantitative' />
+      <column caption='Amt Credit' datatype='real' name='[AMT_CREDIT]' role='measure' type='quantitative' />
+      <column caption='Amt Goods Price' datatype='real' name='[AMT_GOODS_PRICE]' role='measure' type='quantitative' />
+      <column caption='Amt Income Total' datatype='real' name='[AMT_INCOME_TOTAL]' role='measure' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Day' datatype='integer' name='[AMT_REQ_CREDIT_BUREAU_DAY]' role='dimension' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Hour' datatype='integer' name='[AMT_REQ_CREDIT_BUREAU_HOUR]' role='measure' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Mon' datatype='integer' name='[AMT_REQ_CREDIT_BUREAU_MON]' role='measure' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Qrt' datatype='integer' name='[AMT_REQ_CREDIT_BUREAU_QRT]' role='measure' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Week' datatype='integer' name='[AMT_REQ_CREDIT_BUREAU_WEEK]' role='dimension' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Year' datatype='integer' name='[AMT_REQ_CREDIT_BUREAU_YEAR]' role='dimension' type='quantitative' />
+      <column caption='Apartments Avg' datatype='real' name='[APARTMENTS_AVG]' role='measure' type='quantitative' />
+      <column caption='Apartments Medi' datatype='real' name='[APARTMENTS_MEDI]' role='measure' type='quantitative' />
+      <column caption='Apartments Mode' datatype='real' name='[APARTMENTS_MODE]' role='measure' type='quantitative' />
+      <column caption='Basementarea Avg' datatype='real' name='[BASEMENTAREA_AVG]' role='measure' type='quantitative' />
+      <column caption='Basementarea Medi' datatype='real' name='[BASEMENTAREA_MEDI]' role='measure' type='quantitative' />
+      <column caption='Basementarea Mode' datatype='real' name='[BASEMENTAREA_MODE]' role='measure' type='quantitative' />
+      <column caption='Cnt Children' datatype='integer' name='[CNT_CHILDREN]' role='measure' type='quantitative' />
+      <column caption='Cnt Fam Members' datatype='integer' name='[CNT_FAM_MEMBERS]' role='measure' type='quantitative' />
+      <column caption='Code Gender' datatype='string' name='[CODE_GENDER]' role='dimension' type='nominal' />
+      <column caption='Commonarea Avg' datatype='real' name='[COMMONAREA_AVG]' role='measure' type='quantitative' />
+      <column caption='Commonarea Medi' datatype='real' name='[COMMONAREA_MEDI]' role='measure' type='quantitative' />
+      <column caption='Commonarea Mode' datatype='real' name='[COMMONAREA_MODE]' role='measure' type='quantitative' />
+      <column caption='Days Birth' datatype='integer' name='[DAYS_BIRTH]' role='measure' type='quantitative' />
+      <column caption='Days Employed' datatype='integer' name='[DAYS_EMPLOYED]' role='measure' type='quantitative' />
+      <column caption='Days Id Publish' datatype='integer' name='[DAYS_ID_PUBLISH]' role='measure' type='quantitative' />
+      <column caption='Days Last Phone Change' datatype='integer' name='[DAYS_LAST_PHONE_CHANGE]' role='measure' type='quantitative' />
+      <column caption='Days Registration' datatype='integer' name='[DAYS_REGISTRATION]' role='measure' type='quantitative' />
+      <column caption='Def 30 Cnt Social Circle' datatype='integer' name='[DEF_30_CNT_SOCIAL_CIRCLE]' role='measure' type='quantitative' />
+      <column caption='Def 60 Cnt Social Circle' datatype='integer' name='[DEF_60_CNT_SOCIAL_CIRCLE]' role='measure' type='quantitative' />
+      <column caption='Elevators Avg' datatype='real' name='[ELEVATORS_AVG]' role='measure' type='quantitative' />
+      <column caption='Elevators Medi' datatype='real' name='[ELEVATORS_MEDI]' role='measure' type='quantitative' />
+      <column caption='Elevators Mode' datatype='real' name='[ELEVATORS_MODE]' role='measure' type='quantitative' />
+      <column caption='Emergencystate Mode' datatype='string' name='[EMERGENCYSTATE_MODE]' role='dimension' type='nominal' />
+      <column caption='Entrances Avg' datatype='real' name='[ENTRANCES_AVG]' role='measure' type='quantitative' />
+      <column caption='Entrances Medi' datatype='real' name='[ENTRANCES_MEDI]' role='measure' type='quantitative' />
+      <column caption='Entrances Mode' datatype='real' name='[ENTRANCES_MODE]' role='measure' type='quantitative' />
+      <column caption='Ext Source 1' datatype='real' name='[EXT_SOURCE_1]' role='measure' type='quantitative' />
+      <column caption='Ext Source 2' datatype='real' name='[EXT_SOURCE_2]' role='measure' type='quantitative' />
+      <column caption='Ext Source 3' datatype='real' name='[EXT_SOURCE_3]' role='measure' type='quantitative' />
+      <column caption='Flag Cont Mobile' datatype='integer' name='[FLAG_CONT_MOBILE]' role='measure' type='quantitative' />
+      <column caption='Flag Document 10' datatype='integer' name='[FLAG_DOCUMENT_10]' role='measure' type='quantitative' />
+      <column caption='Flag Document 11' datatype='integer' name='[FLAG_DOCUMENT_11]' role='measure' type='quantitative' />
+      <column caption='Flag Document 12' datatype='integer' name='[FLAG_DOCUMENT_12]' role='measure' type='quantitative' />
+      <column caption='Flag Document 13' datatype='integer' name='[FLAG_DOCUMENT_13]' role='measure' type='quantitative' />
+      <column caption='Flag Document 14' datatype='integer' name='[FLAG_DOCUMENT_14]' role='measure' type='quantitative' />
+      <column caption='Flag Document 15' datatype='integer' name='[FLAG_DOCUMENT_15]' role='measure' type='quantitative' />
+      <column caption='Flag Document 16' datatype='integer' name='[FLAG_DOCUMENT_16]' role='measure' type='quantitative' />
+      <column caption='Flag Document 17' datatype='integer' name='[FLAG_DOCUMENT_17]' role='measure' type='quantitative' />
+      <column caption='Flag Document 18' datatype='integer' name='[FLAG_DOCUMENT_18]' role='measure' type='quantitative' />
+      <column caption='Flag Document 19' datatype='integer' name='[FLAG_DOCUMENT_19]' role='measure' type='quantitative' />
+      <column caption='Flag Document 20' datatype='integer' name='[FLAG_DOCUMENT_20]' role='measure' type='quantitative' />
+      <column caption='Flag Document 21' datatype='integer' name='[FLAG_DOCUMENT_21]' role='measure' type='quantitative' />
+      <column caption='Flag Document 2' datatype='integer' name='[FLAG_DOCUMENT_2]' role='measure' type='quantitative' />
+      <column caption='Flag Document 3' datatype='integer' name='[FLAG_DOCUMENT_3]' role='measure' type='quantitative' />
+      <column caption='Flag Document 4' datatype='integer' name='[FLAG_DOCUMENT_4]' role='measure' type='quantitative' />
+      <column caption='Flag Document 5' datatype='integer' name='[FLAG_DOCUMENT_5]' role='measure' type='quantitative' />
+      <column caption='Flag Document 6' datatype='integer' name='[FLAG_DOCUMENT_6]' role='measure' type='quantitative' />
+      <column caption='Flag Document 7' datatype='integer' name='[FLAG_DOCUMENT_7]' role='measure' type='quantitative' />
+      <column caption='Flag Document 8' datatype='integer' name='[FLAG_DOCUMENT_8]' role='measure' type='quantitative' />
+      <column caption='Flag Document 9' datatype='integer' name='[FLAG_DOCUMENT_9]' role='measure' type='quantitative' />
+      <column caption='Flag Email' datatype='integer' name='[FLAG_EMAIL]' role='measure' type='quantitative' />
+      <column caption='Flag Emp Phone' datatype='integer' name='[FLAG_EMP_PHONE]' role='measure' type='quantitative' />
+      <column caption='Flag Mobil' datatype='integer' name='[FLAG_MOBIL]' role='measure' type='quantitative' />
+      <column caption='Flag Own Car' datatype='string' name='[FLAG_OWN_CAR]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Flag Own Realty' datatype='string' default-role='measure' default-type='quantitative' name='[FLAG_OWN_REALTY]' role='dimension' type='nominal' />
+      <column caption='Flag Phone' datatype='integer' name='[FLAG_PHONE]' role='measure' type='quantitative' />
+      <column caption='Flag Work Phone' datatype='integer' name='[FLAG_WORK_PHONE]' role='measure' type='quantitative' />
+      <column caption='Floorsmax Avg' datatype='real' name='[FLOORSMAX_AVG]' role='measure' type='quantitative' />
+      <column caption='Floorsmax Medi' datatype='real' name='[FLOORSMAX_MEDI]' role='measure' type='quantitative' />
+      <column caption='Floorsmax Mode' datatype='real' name='[FLOORSMAX_MODE]' role='measure' type='quantitative' />
+      <column caption='Floorsmin Avg' datatype='real' name='[FLOORSMIN_AVG]' role='measure' type='quantitative' />
+      <column caption='Floorsmin Medi' datatype='real' name='[FLOORSMIN_MEDI]' role='measure' type='quantitative' />
+      <column caption='Floorsmin Mode' datatype='real' name='[FLOORSMIN_MODE]' role='measure' type='quantitative' />
+      <column caption='Fondkapremont Mode' datatype='string' name='[FONDKAPREMONT_MODE]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' name='[Flag Own Realty (copy)]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[FLAG_OWN_REALTY]' />
+      </column>
+      <column caption='Hour Appr Process Start' datatype='integer' name='[HOUR_APPR_PROCESS_START]' role='measure' type='quantitative' />
+      <column caption='Housetype Mode' datatype='string' name='[HOUSETYPE_MODE]' role='dimension' type='nominal' />
+      <column caption='Landarea Avg' datatype='real' name='[LANDAREA_AVG]' role='measure' type='quantitative' />
+      <column caption='Landarea Medi' datatype='real' name='[LANDAREA_MEDI]' role='measure' type='quantitative' />
+      <column caption='Landarea Mode' datatype='real' name='[LANDAREA_MODE]' role='measure' type='quantitative' />
+      <column caption='Live City Not Work City' datatype='integer' name='[LIVE_CITY_NOT_WORK_CITY]' role='measure' type='quantitative' />
+      <column caption='Live Region Not Work Region' datatype='integer' name='[LIVE_REGION_NOT_WORK_REGION]' role='measure' type='quantitative' />
+      <column caption='Livingapartments Avg' datatype='real' name='[LIVINGAPARTMENTS_AVG]' role='measure' type='quantitative' />
+      <column caption='Livingapartments Medi' datatype='real' name='[LIVINGAPARTMENTS_MEDI]' role='measure' type='quantitative' />
+      <column caption='Livingapartments Mode' datatype='real' name='[LIVINGAPARTMENTS_MODE]' role='measure' type='quantitative' />
+      <column caption='Livingarea Avg' datatype='real' name='[LIVINGAREA_AVG]' role='measure' type='quantitative' />
+      <column caption='Livingarea Medi' datatype='real' name='[LIVINGAREA_MEDI]' role='measure' type='quantitative' />
+      <column caption='Livingarea Mode' datatype='real' name='[LIVINGAREA_MODE]' role='measure' type='quantitative' />
+      <column caption='Name Contract Type' datatype='string' name='[NAME_CONTRACT_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Education Type' datatype='string' name='[NAME_EDUCATION_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Family Status' datatype='string' name='[NAME_FAMILY_STATUS]' role='dimension' type='nominal' />
+      <column caption='Name Housing Type' datatype='string' name='[NAME_HOUSING_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Income Type' datatype='string' name='[NAME_INCOME_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Type Suite' datatype='string' name='[NAME_TYPE_SUITE]' role='dimension' type='nominal' />
+      <column caption='Nonlivingapartments Avg' datatype='real' name='[NONLIVINGAPARTMENTS_AVG]' role='measure' type='quantitative' />
+      <column caption='Nonlivingapartments Medi' datatype='real' name='[NONLIVINGAPARTMENTS_MEDI]' role='measure' type='quantitative' />
+      <column caption='Nonlivingapartments Mode' datatype='real' name='[NONLIVINGAPARTMENTS_MODE]' role='measure' type='quantitative' />
+      <column caption='Nonlivingarea Avg' datatype='real' name='[NONLIVINGAREA_AVG]' role='measure' type='quantitative' />
+      <column caption='Nonlivingarea Medi' datatype='real' name='[NONLIVINGAREA_MEDI]' role='measure' type='quantitative' />
+      <column caption='Nonlivingarea Mode' datatype='real' name='[NONLIVINGAREA_MODE]' role='measure' type='quantitative' />
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Name Family Status (copy)]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[NAME_FAMILY_STATUS]' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Obs 30 Cnt Social Circle' datatype='integer' name='[OBS_30_CNT_SOCIAL_CIRCLE]' role='measure' type='quantitative' />
+      <column caption='Obs 60 Cnt Social Circle' datatype='integer' name='[OBS_60_CNT_SOCIAL_CIRCLE]' role='measure' type='quantitative' />
+      <column caption='Occupation Type' datatype='string' name='[OCCUPATION_TYPE]' role='dimension' type='nominal' />
+      <column caption='Organization Type' datatype='string' name='[ORGANIZATION_TYPE]' role='dimension' type='nominal' />
+      <column caption='Own Car Age' datatype='integer' name='[OWN_CAR_AGE]' role='measure' type='quantitative' />
+      <column caption='Region Population Relative' datatype='real' name='[REGION_POPULATION_RELATIVE]' role='measure' type='quantitative' />
+      <column caption='Region Rating Client' datatype='integer' name='[REGION_RATING_CLIENT]' role='measure' type='quantitative' />
+      <column caption='Region Rating Client W City' datatype='integer' name='[REGION_RATING_CLIENT_W_CITY]' role='measure' type='quantitative' />
+      <column caption='Reg City Not Live City' datatype='integer' name='[REG_CITY_NOT_LIVE_CITY]' role='measure' type='quantitative' />
+      <column caption='Reg City Not Work City' datatype='integer' name='[REG_CITY_NOT_WORK_CITY]' role='measure' type='quantitative' />
+      <column caption='Reg Region Not Live Region' datatype='integer' name='[REG_REGION_NOT_LIVE_REGION]' role='measure' type='quantitative' />
+      <column caption='Reg Region Not Work Region' datatype='integer' name='[REG_REGION_NOT_WORK_REGION]' role='measure' type='quantitative' />
+      <column caption='Sk Id Curr' datatype='integer' name='[SK_ID_CURR]' role='measure' type='quantitative' />
+      <column caption='Target' datatype='integer' name='[TARGET]' role='measure' type='quantitative' />
+      <column caption='Totalarea Mode' datatype='real' name='[TOTALAREA_MODE]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Target (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[TARGET]' peg='0' size='0.303' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Target (copy)]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[TARGET]' />
+      </column>
+      <column caption='Wallsmaterial Mode' datatype='string' name='[WALLSMATERIAL_MODE]' role='dimension' type='nominal' />
+      <column caption='Weekday Appr Process Start' datatype='string' name='[WEEKDAY_APPR_PROCESS_START]' role='dimension' type='nominal' />
+      <column caption='Years Beginexpluatation Avg' datatype='real' name='[YEARS_BEGINEXPLUATATION_AVG]' role='measure' type='quantitative' />
+      <column caption='Years Beginexpluatation Medi' datatype='real' name='[YEARS_BEGINEXPLUATATION_MEDI]' role='measure' type='quantitative' />
+      <column caption='Years Beginexpluatation Mode' datatype='real' name='[YEARS_BEGINEXPLUATATION_MODE]' role='measure' type='quantitative' />
+      <column caption='Years Build Avg' datatype='real' name='[YEARS_BUILD_AVG]' role='measure' type='quantitative' />
+      <column caption='Years Build Medi' datatype='real' name='[YEARS_BUILD_MEDI]' role='measure' type='quantitative' />
+      <column caption='Years Build Mode' datatype='real' name='[YEARS_BUILD_MODE]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.555556' measure-ordering='alphabetic' measure-percentage='0.444444' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Medium'>COUNT OF TARGET VARIABLES</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='application_data' name='federated.0m26y6e1o4hbc81f1bi4l031g565' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m26y6e1o4hbc81f1bi4l031g565'>
+            <column caption='Name Family Status' datatype='string' name='[NAME_FAMILY_STATUS]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Name Family Status (copy)]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[NAME_FAMILY_STATUS]' />
+            </column>
+            <column-instance column='[Name Family Status (copy)]' derivation='Count' name='[cnt:Name Family Status (copy):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NAME_FAMILY_STATUS]' derivation='None' name='[none:NAME_FAMILY_STATUS:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0m26y6e1o4hbc81f1bi4l031g565].[none:NAME_FAMILY_STATUS:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m26y6e1o4hbc81f1bi4l031g565].[cnt:Name Family Status (copy):qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{10DAB2B5-632C-48F7-AE08-1A15DE669415}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0m26y6e1o4hbc81f1bi4l031g565].[none:NAME_FAMILY_STATUS:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0m26y6e1o4hbc81f1bi4l031g565].[attr:NAME_FAMILY_STATUS:nk]</field>
+            <field>[federated.0m26y6e1o4hbc81f1bi4l031g565].[none:FLAG_OWN_REALTY:nk]</field>
+            <field>[federated.0m26y6e1o4hbc81f1bi4l031g565].[none:Flag Own Realty (copy):nk]</field>
+            <field>[federated.0m26y6e1o4hbc81f1bi4l031g565].[none:NAME_FAMILY_STATUS:nk]</field>
+            <field>[federated.0m26y6e1o4hbc81f1bi4l031g565].[none:TARGET:ok]</field>
+            <field>[federated.0m26y6e1o4hbc81f1bi4l031g565].[none:Target (copy):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BC14FEDF-F029-4FF6-A046-49AD2E16A72A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='142'>
+      iVBORw0KGgoAAAANSUhEUgAAAI4AAADACAYAAADSr1sUAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAALHUlEQVR4nO3df1DXhR3H8Wd9g0GOCYpOKE2ZLW26NBMz2eayo8O7Tmem5Y00XaemxVZH
+      ddrlbOqxun5dekq5wlFa3miympycNlsmnU5FLcUfBY4CMxUQ+SFfP333Bz/kZ315f3H6gdfj
+      P/h+wO/neB6fz/fr8X5f4fP5fIi005WX+gmIOykcMVE4YqJwxEThiInCEROFIyYK5yKprKy8
+      1E/holI4YqJwxEThiInCEZOrLvUTaD+Hk59ms+G9rXxaWEqVA57Q3vzszkQS43/Kjzz1h53h
+      8Nb1ZGTtpaC8BoLD6B83nXmTh144BoeTu9ayKj2HwioI7TuaxDnTGBHZcADHs57hn1FPM2tY
+      o6dQvZ+0Re/x46QnSIj20BW5MJxvyP3kJIOmPsZ9fXvTLQi8JQfZvOZVnq15hCUT+gFlfPTK
+      Ij7oOZnEhdOJiQjCqS4m5/Xnefb9+mOgen86Kescpi56mZERULLzryxNSSd4yQyGhrT171eQ
+      +9abFI1NIrEumrZeQZWXl3f86V8ufJ3FV+/5Fi3e6Cv2+Xw+X6nvq6/OtjymeKNvccMxp3yb
+      Uxb6Mr443+iA874vMhb6UjafavQli32r91w44uye1b7Hl26q+x5tq6ioMJ6IO3Sae5yKYwWc
+      jbmOXgB0Jzq6W4tjnLNnqeoRTjhA9SEOlt7M8AGNLzUeBgy/mdKDh6hu9R/ZxVtvlpAwJ54+
+      F+Ec3MSFl6rGvFScKORAzj/YkDeAOfNvpK07DudkDqmvHeGXSZMIASgt5XTPHvRofmCPHvQ8
+      XUopNIujgpw30qi5O4WxLb6o63FtOLl/mc3KHQAh9Pv1/SQ9OoLeQa0d6aVwy0qWZ39L/Pxk
+      xjW+mY0Ip3vzw7uHE0FVk0/tWDmbHQB9f8OfRrf8TdYVuTacYbNSSZ0F3ooTFO75F2v++C69
+      7lnAjGGNfrDeQrasWE72lfHMXzKOvs3DKimlDJrGU1ZKSbPDYuemMmvYcbKXLWV9zi+Yr3jc
+      /z5OULfexMRNJXlBAmVrMsmrf8ApIuu55RwalcyyR1qJJjycHqdOc7r5Nzx9mlP190FN9CE+
+      aRahG14mq8jp+BNxGdeH0yAklNDKUspqABzyM1PZMzyJ2aMjW7/vCbmBweG72ZPfOAKH/D27
+      CR98A62+Gu82jBkP9GfLC+nsb/XuuetwXzjHN7N6dRZ7vyynuu5n7q34kp3pmewfOpwhwQBH
+      yNnej/Hx0W3eLEMPxowfyPYVaews8QJeSnamsWL7QMaPafvu1zNoKo+OK+LNt3Kp6NATc5cr
+      fD6X/XmMc4bDWzfw/kf7yC8up4bad44Hjp7I/ZNHEOkBvslm2VMZHGvt66+ZyOKnE+peMRnf
+      OaaCXa8uYlPfR3kiofU4KysrufrqqzvstC837gvHJTp7OO67VMllQeGIicIRE4UjJgpHTBSO
+      mCgcMVE4YqJwxEThiInCEROFIyYKR0wUjpgoHDFROGKicMTEtX8e43YTFrx9qZ9Cu2Quu7fJ
+      x/qNIyYKR0wUjpgoHDFROGKicMRE4YiJwhEThSMmCkdMFI6YuOz/qvwcju3H+BINxw6My8Lx
+      Zzi2f4OvO2o4dlflsktVH+74XSJxMbXRAARFDCZhyliu2vsZxwE4zccbj3LbvBmMjAgCgogY
+      OYN5tx1l48f1E//8Oaality3Wff1OGa2MUypK3FZOK1rMhzbn8HXGo4dMJddqhprYzi2P4Ov
+      NRw7YK4M53uHY/sz+LoDh2N3hSUgzc/FleF873BsfwZfd+Bw7NZm/VVWVhIWFmY4u8tT83Nx
+      9T1Oq8Ox/Rl8reHYAXN1OA0aD8f2Z/C1hmMHzF3h+DUc25/B1xqOHSh3zTn2Zzh27YEX751j
+      P4Zjw/fPOXb7Xzm4KxwX6ezhuOtSJZcNhSMmCkdMFI6YKBwxUThionDEROGIicIRE4UjJgpH
+      TBSOmCgcMVE4YqJwxEThiInCEROFIyYKR0wUjpgoHDFROGKicMRE4YiJwhEThSMmCkdMFI6Y
+      KBwxUThionDEROGIifumjjpnOLx1PRlZeykor4HgMPrHTWfe5KEXdjk4J9m19jXW7Sig9pD+
+      xN73INNGRDaaoKVdDoFwWThlfPTKIj7oOZnEhdOJiQjCqS4m5/Xnefb9+l0OFeSsXEzWD+/n
+      seduJioEqot38/bKxaysSWkYN6tdDoFx3aXqJ1OWsigxjpiI2onYnpAo4iaNI7h+l0P1PnZ9
+      Pop7E0cSFeIBPIREjSTx3lF8vmtf3bh97XIIlMvC6U50dMsB1c7Zs1TVzycOCiX0/Dlqmh9U
+      c47zoaEEgXY5dACXhdOSczKH1NeO8MtJsbXziT1DSRj/NetSt1Fc7QAO1cXbSF33NeMThvq9
+      76Gp+l0Oc7XLoY7L7nEa81K4ZSXLs78lfn4y4xruOTxEJyTz8IereCkpvTaC8CFMeziZXzW+
+      L9Euh3bpFLsc8BayZcVysq+MZ/6ScfRtvACECnLTUtgcMY3HX36IniFQfeowm954hrQ7nmzf
+      vge0y6Ge+3c5OEVkPbecQ6OSWfZI82iAvEzWlN3J3AmD6Vl/c9xzMBPm3tm+fQ9NaJdDcy4L
+      xyE/M5U9w5OYPTqy9Vc23hrOeTwtH/N48JyrwQva5dABXBbOEXK292N8/He8HL7xVuIKMliV
+      dZASb+2nvCUHyVqVQUHcrdwIaJdD4Nw1kv+bbJY9lcGx1h67ZiKLn06gD+CcOczW9Rlk7b3w
+      zvFNCXczZWz7NgVfzF0O5S8Oac+ZX3Jhf/i0ycfuCsdFOns4LrtUyeVC4YiJwhEThSMmCkdM
+      FI6YKBwxUThionDEROGIicIRE4UjJgpHTBSOmCgcMVE4YqJwxEThiInCEROFIyYKR0wUjpgo
+      HDFROGKicMRE4YiJwhEThSMmCkdMFI6YKBwxUThi4r6po/7scqB2Kld2ejqbPjtBlRNMWP9Y
+      fjsnkWERDUdol0MAXBaOP7scgIpc0pa+i2fyQ6TMiSKEak4d287Rk0BdONrlEBjXXaq+d5cD
+      8N/Nf6ck4ffMGBlF7cTaEHrG3M6o6+u/i3Y5BMpl4fixy4E8tm3txZhbv2N2vnY5BMxll6qW
+      GnY5JE2qnU9cdpyi7pHE/OcdXtiUw9ETVTjBYfSPvY8Hp40g0oNfuxyaxlG/yyFFuxzquDic
+      NnY5VFVReeIAe8vvZsqTk7i224X7oJR3uvHnaYNqLzPa5dAuXWCXA9A7lrsSbiK67kNPSBRx
+      M+9hX/InHJg2iKFwyXc5uC2pzr/Loc+19DtRwLHmNyoh1zGgVyWV59Auhw7gsnD82OXA9Qwe
+      coB/N391VJ3P5yXhdP8B2uXQAVwWjh+7HAjhlol34Wx4ibW5JXgBp7qYba9v4EzC7QwCtMsh
+      cO4aye/nLgcAb+E21qz5G7sLq3CCI/n5+AeYkTCQC3co2uXQHtrl8H/S2cNx2aVKLhcKR0wU
+      jpgoHDFROGKicMRE4YiJwhEThSMmCkdMFI6YKBwxUThionDEROGIicIRE4UjJgpHTBSOmCgc
+      MVE4YqJwxEThiInCEROFIyYKR0wUjpgoHDFROGKicMRE4YiJwhET900d9XOXQ8PheWt54sUP
+      KY+dS2qT0Vra5RAIl4Xj5y6Hek4+mesKiJ8YS0ZR04e0yyEwrrtU+bPLoZZDfmYaeWNmEh/V
+      /Ltol0OgXBaOP7sc6j6Xn0la3hhmxreyeUG7HALmsnBaatjlMCn2wnxip4isdXmMmdnGD9mP
+      XQ5N1e9ymKtdDnVcdo/TWBu7HHAoykpj3y0zWfBdvxq0y6Fdmp/L/wBjD0rcdVRVcQAAAABJ
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
